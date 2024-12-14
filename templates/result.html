@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation Result</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+    <div class="result-container">
+        <h1>Segmentation Result</h1>
+        
+        <!-- Display the result image -->
+        <img src="{{ url_for('static', filename=result_image) }}" alt="Segmentation Result" class="result-image">
+        
+        <!-- Button to submit another image -->
+        <a href="{{ url_for('index') }}">
+            <button class="submit-another-button">Submit Another Image</button>
+        </a>
+    </div>
+</body>
+</html>
